@@ -1,0 +1,62 @@
+PHP Stuff
+
+Associative Array syntax:
+
+$myVar = array(
+    'key' => 'value',
+    'key' => 'value',
+    'key' => 'value'
+);
+
+WP Functions and Explainations
+
+this loop calls all the posts available, usually 10
+while(have_posts()) {
+    
+    the_post();
+        ^displays current post
+        ?> exit php
+            html
+        <?php the_title ?>
+            html
+        <?php the_content ?>
+            html
+        <?php re-enter php 
+
+}
+
+get_the_title(arg [id or page number]);
+
+get_permalink(arg [id or page number]);
+
+get_header();
+    Put in index.php file
+    Calls header.php file
+
+get_footer();
+    Put in index.php file
+    Calls footer.php file
+
+wp_enqueue_style('yourName', point to);
+    First arg give name
+    Second arg point to location
+
+wp_enqueue_script('yourName', point to);
+    First arg give name
+    Second arg point to location
+
+get_theme_file_uri(args);
+    if => javascript
+        ('filePath', dependencies?, version, loadEnd?)
+
+    if => getting image in html
+        echo out the function
+
+site_url(directory);
+    echo out the function for anchors
+    gets root directory if no args
+    can point to specific page
+
+add_theme_support();
+    enable features for a theme
+    title-tag as arg for setting title of page
