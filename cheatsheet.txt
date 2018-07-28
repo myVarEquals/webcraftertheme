@@ -60,3 +60,15 @@ site_url(directory);
 add_theme_support();
     enable features for a theme
     title-tag as arg for setting title of page
+
+language_attributes();
+    put in html tag. sets language to language defined on wp dash
+
+bloginfo(arg);
+    gets info for site
+    pass charset to get charset
+
+body_class();
+    applies descriptive classes to body based on page
+
+register_nav_menu('yourNameDescriptor', 'admin dash text');
