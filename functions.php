@@ -11,10 +11,13 @@
     }
 
     function webCrafters_titles() {
+        
+        register_nav_menu('header_menu_location', 'Header Menu Location');
+        register_nav_menu('footer_location_one', 'Footer Location One');
+        register_nav_menu('footer_location_two', 'Footer Location Two');
         //Enable feature for theme
         //which feature is arg
         //can be adjusted in settings page of wordpress dash
-        register_nav_menu('header_menu_location', 'Header Menu Location');
         add_theme_support('title-tag');
         
     }

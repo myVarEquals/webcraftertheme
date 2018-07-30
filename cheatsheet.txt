@@ -17,13 +17,15 @@ while(have_posts()) {
         ^displays current post
         ?> exit php
             html
-        <?php the_title ?>
-            html
-        <?php the_content ?>
+        <?php the_title(); ?>
+            html                    \/ gets trimmed version of post 
+        <?php the_content(); ?> OR <?php the_excerpt(); ?>
             html
         <?php re-enter php 
 
 }
+
+FOR GET FUNCTIONS, YOU HAVE TO ECHO BECAUSE ITS A RETURN FUNCTION!
 
 get_the_title(arg [id or page number]);
 
@@ -72,3 +74,7 @@ body_class();
     applies descriptive classes to body based on page
 
 register_nav_menu('yourNameDescriptor', 'admin dash text');
+    use this to make dynamic nav menus with WP admin dash, otherwise hardcode in html
+
+the_author_posts_link();
+    get post author and makes it an anchor
